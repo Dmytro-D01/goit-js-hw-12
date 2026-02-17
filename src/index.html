@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JS-11</title>
+    <title>JS-11 | Image Search</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -16,12 +16,17 @@
             name="search-text"
             placeholder="Search images..."
             required
+            autocomplete="off"
           />
         </label>
         <button type="submit">Search</button>
       </form>
-      <span class="loader"></span>
+
       <ul class="gallery"></ul>
+
+      <button type="button" class="load-more is-hidden">Load more</button>
+
+      <span class="loader"></span>
     </main>
     <script type="module" src="./main.js"></script>
   </body>
